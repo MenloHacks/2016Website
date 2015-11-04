@@ -1,0 +1,25 @@
+#mainTitle {
+    margin-top: 100px;
+}
+
+#mainTitle h1 {
+    font-family: sans-serif;
+    color: #0161aa;
+}
+
+#logo {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.btn-apply, .btn-apply:active, .btn-apply:focus {
+    border-radius: 3px;
+    background-color: #0161aa;
+    color: white;
+}
+
+.btn-apply:hover {
+    background-color: #094d81;
+    color: white;
+}
