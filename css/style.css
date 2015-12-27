@@ -1,0 +1,244 @@
+@font-face {
+    font-family: av-ultralight;
+    src: url("../fonts/AvenirNext-UltraLight.ttf") format("opentype");
+}
+@font-face {
+    font-family: av-regular;
+    src: url("../fonts/AvenirNext-Regular.ttf") format("opentype"); 
+}
+@font-face {
+    font-family: av-demibold;
+    src: url("../fonts/AvenirNext-DemiBold.ttf") format("opentype");
+}
+@font-face {
+    font-family: av-ultralight-italic;
+    src: url("../fonts/AvenirNext-UltraLightItalic.ttf") format("opentype");
+}
+@font-face
+{
+    font-family : av-regular-italic;
+    src: url("../fonts/AvenirNext-Italic.ttf") format("opentype");
+}
+
+
+/* Just in case I get lazy */
+.regular {
+    font-family: av-regular;
+}
+.light {
+    font-family: av-ultralight;
+}
+.light-italic
+{
+    font-family: av-ultralight-italic;
+}
+.bold
+{
+    font-family: av-demibold;
+}
+.dark
+{
+    color: #4a4a4a;
+}
+
+.footer-note
+{
+    font-family: av-regular;
+    text-align: center;
+    color : #ffffff;
+}
+
+footer
+{
+    background-color : #1abc9c;
+}
+
+li
+{
+    color : #ffffff;
+}
+
+.footer-link
+{
+    color : #ffffff;
+    font-family: av-regular;
+}
+/*
+* Base structure
+*/
+
+html,
+body {
+    height: 100%;
+
+}
+body {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.content-main {
+    height: 100%;
+    background-color: #34495e;
+}
+
+.logo-header {
+    height:45%;
+    max-height: 200px;
+    min-height: 100px;
+    margin: 25px;
+}
+
+/* background crazyness */
+.main-background {
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('https://c2.staticflickr.com/6/5657/21910039498_907e679b57_h.jpg');
+    background-size: cover;
+    height:90%;
+    width:100%;
+}
+
+
+.horizontal-center-container {
+    text-align: center;
+}
+
+.center-container {
+    position : absolute;
+    width : 100%;
+    height : 90%;
+    text-align: center;
+
+}
+
+.center-container:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.top-center-box {
+    height : 50%;
+    width : 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.intro-text p {
+    line-height: 1;
+    font-size: 1.5em;
+    font-family: av-regular;
+}
+
+.intro-text {
+    margin: 25px;
+}
+
+.large-button {
+    width: 25%;
+    min-width: 100px;
+    max-width: 150px;
+    font-size: 1.5em;
+    font-family: av-regular;
+    margin: 25px;
+    padding: 0.6em;
+    color:white;
+    vertical-align: middle;
+
+}
+
+.apply-button {
+    background: #337ab7;
+    border-color: #2e6da4;
+}
+.apply-button:hover, .apply-button:focus, .apply-button:active, .apply-button.active, .open > .dropdown-toggle.apply-button {
+    background: #2e6da4;
+    border-color: #2e6da4;
+}
+
+.sponsor-button {
+    background: #f0ad4e;
+    border-color: #eea236;
+}
+
+.sponsor-button:hover, .sponsor-button:focus, .sponsor-button:active, .sponsor-button.active, .open > .dropdown-toggle.sponsor-button {
+    background: #eea236;
+    border-color: #eea236;
+}
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+/* general styles */
+body {
+    font-family: av-regular;
+    text-align: center;
+    color: #fff;
+    background: #2a2a2a; }
+
+:hover {
+    transition: color linear .15s;
+    transition: color linear .15s; }
+
+
+/* breadcrumbs */
+
+.nav-wrapper {
+    width: 100%;
+    height: 10%;
+    min-height: 70px;
+    background: blue;
+}
+.breadcrumbs {
+    font-size: 1em;
+}
+.breadcrumbs li {
+    display: inline-block;
+    border: 0.2em solid #fff;
+    font-size: 1.2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 2%;
+    margin-left: 2%;
+
+}
+.breadcrumbs li a {
+    color: #888; }
+.breadcrumbs li a:hover, .breadcrumbs li a:active, .breadcrumbs li a:focus, .breadcrumbs li a:active:focus, .breadcrumbs li a:focus:active {
+    background: inherit; }
+.breadcrumbs #about-crumb.active, .breadcrumbs #about-crumb:hover {
+    border-bottom-color: #d63756; }
+.breadcrumbs #home-crumb.active, .breadcrumbs #home-crumb:hover {
+    border-bottom-color: #47adaa; }
+.breadcrumbs #faq-crumb.active, .breadcrumbs #faq-crumb:hover {
+    border-bottom-color: #fdcb5e; }
+.breadcrumbs #schedule-crumb.active, .breadcrumbs #schedule-crumb:hover {
+    border-bottom-color: #202f57; }
+
+.nav-wrapper.stick {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    border-radius: 0 0 0.5em 0.5em;
+}
+
+#about {
+    height: auto;
+    background: #4a4a4a;
+}
+
+#about p {
+    
+}
+
+#map {
+    height: 30em;
+    width: 80%;
+    margin: 0 auto;
+    background: blue;
+}
+
+#faq {
+    height: 100%;
+}
