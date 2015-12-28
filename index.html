@@ -28,8 +28,10 @@
                 var div_top = $('#sticky-anchor').offset().top;
                 if (window_top > div_top) {
                     $('.nav-wrapper').addClass('stick');
+                    $('.nav-wrapper').removeClass('nav-set-height');
                 } else {
-                    $('.nav-wrapper').removeClass('stick');
+                    $('.nav-wrapper').addClass('nav-set-height');
+                    $('.nav-wrapper').removeClass("stick");
                 }
             }
 
@@ -81,7 +83,7 @@
         </div>
 
         <div id="sticky-anchor"></div>
-        <div class="nav-wrapper hidden-xs">
+        <div class="nav-wrapper hidden-xs nav-set-height">
             <nav class="breadcrumbs row hidden-xs" id="breadcrumbs">
                 <ul class="nav">
                     <!-- <li id="splash" class="hide"></li> -->
@@ -109,13 +111,130 @@
 
         </div>
 
-        <div id="faq">
+        <div id="faq" class="container-fluid">
+            <h2 class="section-heading">FAQ</h2>
+            <div class="col-md-4">
+                <div class="faq-item">
+                    <h3>What is a hackathon?</h3>
+                    <p>In this context, the word "hack" means to create. A hackathon is an event where people come together for 24 hours to make something using the wonders of technology. But, the goal of a hackathon isn't just to create something: it's also to learn. Hackathons are the time to experiment with new technologies, APIs, SDKs, or even learn to code from scratch.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Who can attend?</h3>
+                    <p>Anyone currently in high school is elgible to attend. Special exceptions can be made for middle schoolers so apply anyway and we might make an exception.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How much coding experience do I need?</h3>
+                    <p>None at all. Hackathons are a fantastic place to learn and get advice from experienced hackers. However, we do reccomend every team has at least one
+                        experienced hacker to provide guidance throughout the project. If you have taken AP Computer Science or a higher level of computer science, you should know enough to tackle a project without a more experienced hacker.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How much does the event cost?</h3>
+                    <p>It is 100% free. Even meals, snacks, and drinks are included.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="faq-item">
+                    <h3>What should I bring?</h3>
+                    <p>Bring some sort of photo ID (student IDs are fine), a laptop, and a charger. Also, if you are planning on hacking on hardware we cannot, at this time, guarantee hardware availability so bring your own hardware. </p>
+                </div>
+                <div class="faq-item">
+                    <h3>How will I get there?</h3>
+                    <p>If you live in the area (defined as an hour drive or less away from the event), you are responsible for getting to the event yourself. If you live in the area and can't find a ride, contact us and we will help you find a carpool. We may be providing buses depending on the demand from further away areas within the State of California so apply anyway and we will work with you to help you get there. However, if you live outside California we will not be providing any sort of reimbursement so getting here is up to you.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>When do applications close?</h3>
+                    <p>February 28th.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>When will application decisions be released?</h3>
+                    <p>March 15th</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="faq-item">
+                    <h3>How do I find a team?</h3>
+                    <p>All accepted hackers will be given an invitation to a Facebook group which can be used to find teammates. As well, there will be a team-forming event at the hackathon itself. Obviously, if you have friends going to the event, you are welcome to just team up with them; however, it is often more fun to code with new people.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is there a code of conduct?</h3>
+                    <p>Yes, there is. Generally, be nice, respectful, and courteous to others. If you want the more complete guide we are using the MLH code of conduct which can be found <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">here</a></p>
+                </div>
+                <div class="faq-item">
+                    <h3>I have other questions</h3>
+                    <p>Email us at <a href="mailto:hello@menlohacks.com">hello@menlohacks.com</a></p>
+                </div>
 
+            </div>
         </div>
 
-        <div id="schedule">
+        <div id="schedule" class="container-fluid">
+            <h2 class="section-heading">Schedule</h2>
+            <div class="col-wrapper">
+                <div class="col-md-6 auto-width">
+                    <h4>Saturday</h4>
+                    <div class="schedule-item">
+                        <p class="time">10:00 AM</p>
+                        <p class="schedule-item-description">Check-in</p>
+                    </div>
+                    <div class="schedule-item">
+                        <p class="time">11:00 AM</p>
+                        <p class="schedule-item-description">Opening Ceremonies</p>
+                    </div>
 
+                    <div class="schedule-item">
+                        <p class="time">12:00 PM</p>
+                        <p class="schedule-item-description">Team-Forming Session</p>
+                    </div>
 
+                    <div class="schedule-item">
+                        <p class="time">12:00 PM</p>
+                        <p class="schedule-item-description">Hacking Begins</p>
+                    </div>
+
+                    <div class="schedule-item">
+                        <p class="time">1:00 PM</p>
+                        <p class="schedule-item-description">Lunch</p>
+                    </div>
+
+                    <div class="schedule-item">
+                        <p class="time">6:30 PM</p>
+                        <p class="schedule-item-description">Dinner</p>
+                    </div>
+
+                </div>
+                <div class="col-md-6 auto-width">
+                    <h4>Sunday</h4>
+                    <div class="schedule-item">
+                        <p class="time">12:00 AM</p>
+                        <p class="schedule-item-description">Midnight Snack</p>
+                    </div>
+                    <div class="schedule-item">
+                        <p class="time">7:00 AM</p>
+                        <p class="schedule-item-description">Breakfast</p>
+                    </div>
+                    <div class="schedule-item">
+                        <p class="time">12:00 PM</p>
+                        <p class="schedule-item-description">Hacking Ends</p>
+                    </div>
+                    <div class="schedule-item">
+                        <p class="time">12:15 PM</p>
+                        <p class="schedule-item-description">Lunch</p>
+
+                    </div>
+                    <div class="schedule-item">
+                        <p class="time">12:45 PM</p>
+                        <p class="schedule-item-description">Judging Begins</p>
+                    </div>
+                    <div class="schedule-item">
+                        <p class="time">2:15 PM</p>
+                        <p class="schedule-item-description">Closing Ceremony</p>
+                    </div>
+                    <div class="schedule-item">
+                        <p class="time">3:30 PM</p>
+                        <p class="schedule-item-description">Go home and sleep</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
 

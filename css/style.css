@@ -72,11 +72,6 @@ body {
     height: 100%;
 
 }
-body {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-}
-
 .content-main {
     height: 100%;
     background-color: #34495e;
@@ -186,9 +181,12 @@ body {
 
 .nav-wrapper {
     width: 100%;
-    height: 10%;
     min-height: 70px;
-    background: blue;
+    background: white;
+}
+
+.nav-set-height {
+    height: 10%;
 }
 .breadcrumbs {
     font-size: 1em;
@@ -235,10 +233,78 @@ body {
 #map {
     height: 30em;
     width: 80%;
-    margin: 0 auto;
-    background: blue;
+    margin-left: auto;
+    margin-right: auto;
+    background: #d3d3d3;
+    margin-bottom: 50px;
+}
+
+.section-heading {
+    font-family: av-demibold;
+    font-size: 2.5em;
+    text-align: center;
 }
 
 #faq {
-    height: 100%;
+    background-image: url("../img/gym-blur.jpg");
+    background-size: cover;
+}
+
+.faq-item {
+    margin: 16px;
+    text-align: left;
+}
+
+.faq-item h3 {
+    font-family: av-demibold;
+    font-size: 1.7em;
+    color: ##FEA620;
+}
+
+.faq-item p {
+    font-family: av-regular;
+    font-size: 1.3em;
+    color: white;
+}
+
+.faq-item a {
+    font-family: av-regular;
+    color: #3498db;
+}
+
+.schedule-item p {
+    display: inline;
+    font-family: av-regular;
+    font-size: 1.2em;
+}
+
+.schedule-item {
+    text-align: left;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+}
+
+.col-wrapper {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: auto;
+}
+
+
+.time {
+    color: #FEA620;
+/*    margin-right: 3em;*/
+    width: 15em;
+}
+
+#schedule h4 {
+    font-family: av-demibold;
+    font-size: 1.55em;
+    color: white;
+    text-align: center;
+}
+
+.auto-width {
+    width: auto;
 }
