@@ -21,7 +21,6 @@
 }
 
 
-/* Just in case I get lazy */
 .regular {
     font-family: av-regular;
 }
@@ -98,12 +97,6 @@ body {
 .horizontal-center-container {
     text-align: center;
 }
-
-/*
-.center-container + .nav-wrapper {
-    height: 100%;
-}
-*/
 
 .center-container {
     position : absolute;
@@ -198,11 +191,6 @@ body {
     height: 7em;
 }
 
-/*
-.nav-set-hight .breadcrumbs li {
-    margin-top: 0.75em;
-}
-*/
 .breadcrumbs {
     font-size: 1em;
 }
@@ -333,7 +321,6 @@ p {
 }
 
 
-/* John's tweaks */
 .faq-item a {
     color: white;
     text-decoration: underline;
