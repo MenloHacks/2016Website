@@ -41,9 +41,10 @@
     color: #4a4a4a;
 }
 
-.footer-note
+.footer-note p
 {
     font-family: av-regular;
+    font-size: 1em;
     text-align: center;
     color : #ffffff;
 }
@@ -81,7 +82,7 @@ body {
     height:45%;
     max-height: 200px;
     min-height: 100px;
-    margin: 25px;
+    margin-bottom: 25px;
 }
 
 /* background crazyness */
@@ -228,10 +229,6 @@ body {
     background: #4a4a4a;
 }
 
-#about p {
-    
-}
-
 #map {
     height: 30em;
     width: 80%;
@@ -263,7 +260,7 @@ body {
     color: ##FEA620;
 }
 
-.faq-item p {
+p {
     font-family: av-regular;
     font-size: 1.3em;
     color: white;
@@ -272,6 +269,10 @@ body {
 .faq-item a {
     font-family: av-regular;
     color: #3498db;
+}
+
+#schedule {
+    margin-bottom: 25px;
 }
 
 .schedule-item p {
