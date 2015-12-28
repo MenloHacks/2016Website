@@ -93,6 +93,18 @@ body {
     width:100%;
 }
 
+@media screen and (min-width: 768px) {
+ .main-background {
+     height: calc(100%-7em);
+ }
+}
+
+@media screen and (max-width: 768px) {
+ .main-background {
+     height: 100%;
+ }
+}
+
 
 .horizontal-center-container {
     text-align: center;
@@ -101,8 +113,10 @@ body {
 .center-container {
     position : absolute;
     width : 100%;
-    height : 90%;
+    height: 100%;
     text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
 
 }
 
@@ -115,7 +129,7 @@ body {
 
 .top-center-box {
     height : 50%;
-    width : 50%;
+    width : 99%;
     display: inline-block;
     vertical-align: middle;
 }
@@ -133,7 +147,7 @@ body {
 
 .large-button {
     width: 25%;
-    min-width: 100px;
+    min-width: 125px;
     max-width: 150px;
     font-size: 1.5em;
     font-family: av-regular;
