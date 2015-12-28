@@ -97,11 +97,25 @@ body {
     .main-background {
         height: calc(100%-7em);
     }
+    .col-wrapper {
+        width: 80%;
+    }
+    .large-button {
+        width: 25%;
+            min-width: 125px;
+    max-width: 150px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .main-background {
         height: 100%;
+    }
+    .col-wrapper {
+        width: 90%;
+    }
+    .large-button {
+        width: 50%;
     }
 }
 
@@ -146,9 +160,6 @@ body {
 }
 
 .large-button {
-    width: 25%;
-    min-width: 125px;
-    max-width: 150px;
     font-size: 1.5em;
     font-family: av-regular;
     margin-right: 25px;
@@ -292,8 +303,13 @@ p {
     margin-bottom: 25px;
 }
 
+
+@media screen and (min-width: 340px) {
+    .schedule-item p {
+        display: inline-block;
+    }
+}
 .schedule-item p {
-    display: inline-block;
     font-family: av-regular;
     font-size: 1.2em;
 }
@@ -308,7 +324,7 @@ p {
     margin-right: auto;
     margin-left: auto;
     overflow: auto;
-    width: 80%;
+/*    width: 80%;*/
     max-width: 800px;
 }
 
@@ -331,7 +347,7 @@ p {
 
 .time {
     color: #FEA620;
-    width: 100px;
+    width: 90px;
 }
 
 
