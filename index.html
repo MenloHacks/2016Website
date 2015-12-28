@@ -29,12 +29,14 @@
                 if (window_top > div_top) {
                     $('.nav-wrapper').addClass('stick');
                     $('.nav-wrapper').removeClass('nav-set-height');
-                    
+                    $('.breadcrumbs li').removeClass('breadcrumbs-center');
+
                     $('#about').addClass('nav-adjust');
                 } else {
-                    $('.nav-wrapper').addClass('nav-set-height');
                     $('.nav-wrapper').removeClass("stick");
-                    
+                    $('.nav-wrapper').addClass('nav-set-height');
+                    $('.breadcrumbs li').addClass('breadcrumbs-center');
+
                     $('#about').removeClass('nav-adjust');
                 }
             }
@@ -45,6 +47,8 @@
             });
 
         </script>
+
+
         <script src="https://maps.googleapis.com/maps/api/js">
         </script>
 
@@ -64,29 +68,31 @@
 
     </head>
 
-    <body>
-      <nav class="navbar navbar-default navbar-fixed-top visible-xs">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">MenloHacks</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#schedule">Schedule</a></li>
-        
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+    <body data-spy="scroll" data-target="#breadcrumbs">
+        <nav class="navbar navbar-default navbar-fixed-top visible-xs">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">MenloHacks</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <!--        <div class="front-page">-->
+
 
         <div id = "home" class="main-background">
 
@@ -113,14 +119,18 @@
             <nav class="breadcrumbs row hidden-xs" id="breadcrumbs">
                 <ul class="nav">
                     <!-- <li id="splash" class="hide"></li> -->
-                    <li id="home-crumb" class="active"><a href="#">Home</a></li>
-                    <li id="about-crumb" class=""><a href="#about-link">About</a></li>
-                    <li id="faq-crumb" class=""><a href="#faq-link">FAQ</a></li>
-                    <li id="schedule-crumb"><a href="#schedule-link">Schedule</a></li>
+                    <li id="home-crumb" class="breadcrumbs-center"><a href="#home">Home</a></li>
+                    <li id="about-crumb" class="breadcrumbs-center"><a href="#about-link">About</a></li>
+                    <li id="faq-crumb" class="breadcrumbs-center"><a href="#faq-link">FAQ</a></li>
+                    <li id="schedule-crumb" class="breadcrumbs-center"><a href="#schedule-link">Schedule</a></li>
                 </ul>
             </nav>
         </div>
-        
+
+        <!--
+</div>
+
+-->
         <div id="about-link" class="nav-marker"></div>
         <div id="about">
             <div class="container-fluid">
@@ -137,7 +147,7 @@
             </div>
 
         </div>
-        
+
         <div id="faq-link" class="nav-marker"></div>
         <div id="faq" class="container-fluid">
             <h2 class="section-heading">FAQ</h2>
@@ -175,7 +185,7 @@
                 </div>
                 <div class="faq-item">
                     <h3>When will application decisions be released?</h3>
-                    <p>March 15th</p>
+                    <p>March 15th.</p>
                 </div>
             </div>
             <div class="col-md-4">
@@ -194,7 +204,7 @@
 
             </div>
         </div>
-        
+
         <div id="schedule-link" class="nav-marker"></div>
         <div id="schedule" class="container-fluid">
             <h2 class="section-heading">Schedule</h2>
@@ -231,7 +241,7 @@
                     </div>
 
                 </div>
-                <div class="col-md-6 auto-width">
+                <div class="col-md-6 auto-width right-align">
                     <h4>Sunday</h4>
                     <div class="schedule-item">
                         <p class="time">12:00 AM</p>

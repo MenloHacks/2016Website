@@ -90,7 +90,7 @@ body {
 .main-background {
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('https://c2.staticflickr.com/6/5657/21910039498_907e679b57_h.jpg');
     background-size: cover;
-    height:90%;
+    height: calc(100% - 7em);
     width:100%;
 }
 
@@ -98,6 +98,12 @@ body {
 .horizontal-center-container {
     text-align: center;
 }
+
+/*
+.center-container + .nav-wrapper {
+    height: 100%;
+}
+*/
 
 .center-container {
     position : absolute;
@@ -189,10 +195,20 @@ body {
 }
 
 .nav-set-height {
-    height: 10%;
+    height: 7em;
 }
+
+/*
+.nav-set-hight .breadcrumbs li {
+    margin-top: 0.75em;
+}
+*/
 .breadcrumbs {
     font-size: 1em;
+}
+
+.breadcrumbs-center {
+    margin-top: 0.75em;
 }
 .breadcrumbs li {
     display: inline-block;
@@ -202,7 +218,7 @@ body {
     padding-bottom: 10px;
     margin-right: 2%;
     margin-left: 2%;
-
+    height: 4em;
 }
 .breadcrumbs li a {
     color: #888; }
@@ -281,6 +297,7 @@ p {
     font-size: 1.2em;
 }
 
+
 .schedule-item {
     text-align: left;
     margin-top: 0.5em;
@@ -294,11 +311,14 @@ p {
     overflow: auto;
 }
 
+.right-align {
+    float: right;
+}
+
 
 .time {
     color: #FEA620;
-/*    margin-right: 3em;*/
-    width: 15em;
+    min-width: 100px;
 }
 
 #schedule h4 {
