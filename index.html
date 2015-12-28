@@ -29,9 +29,13 @@
                 if (window_top > div_top) {
                     $('.nav-wrapper').addClass('stick');
                     $('.nav-wrapper').removeClass('nav-set-height');
+                    
+                    $('#about').addClass('nav-adjust');
                 } else {
                     $('.nav-wrapper').addClass('nav-set-height');
                     $('.nav-wrapper').removeClass("stick");
+                    
+                    $('#about').removeClass('nav-adjust');
                 }
             }
 
@@ -96,7 +100,7 @@
                         <p>Atherton, CA</p>
                     </div>
 
-                    <a class="btn btn-primary large-button apply-button text-center" href="http://app.menlohacks.com">Apply</a>
+                    <a class="btn btn-primary large-button apply-button text-center" href="http://apply.menlohacks.com">Apply</a>
                     <a class="btn btn-primary large-button sponsor-button" href="http://menlohacks.com/files/sponsorship.pdf">Sponsor</a>
                 </div>
 
@@ -110,13 +114,14 @@
                 <ul class="nav">
                     <!-- <li id="splash" class="hide"></li> -->
                     <li id="home-crumb" class="active"><a href="#">Home</a></li>
-                    <li id="about-crumb" class=""><a href="#about">About</a></li>
-                    <li id="faq-crumb" class=""><a href="#faq">FAQ</a></li>
-                    <li id="schedule-crumb"><a href="#schedule">Schedule</a></li>
+                    <li id="about-crumb" class=""><a href="#about-link">About</a></li>
+                    <li id="faq-crumb" class=""><a href="#faq-link">FAQ</a></li>
+                    <li id="schedule-crumb"><a href="#schedule-link">Schedule</a></li>
                 </ul>
             </nav>
         </div>
-
+        
+        <div id="about-link" class="nav-marker"></div>
         <div id="about">
             <div class="container-fluid">
                 <h2>What is MenloHacks?</h2>
@@ -132,7 +137,8 @@
             </div>
 
         </div>
-
+        
+        <div id="faq-link" class="nav-marker"></div>
         <div id="faq" class="container-fluid">
             <h2 class="section-heading">FAQ</h2>
             <div class="col-md-4">
@@ -179,16 +185,17 @@
                 </div>
                 <div class="faq-item">
                     <h3>Is there a code of conduct?</h3>
-                    <p>Yes, there is. Generally, be nice, respectful, and courteous to others. If you want the more complete guide we are using the MLH code of conduct which can be found <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">here</a></p>
+                    <p>Yes, there is. Generally, be nice, respectful, and courteous to others. If you want the more complete guide we are using the MLH code of conduct which can be found <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">here</a>.</p>
                 </div>
                 <div class="faq-item">
                     <h3>I have other questions</h3>
-                    <p>Email us at <a href="mailto:hello@menlohacks.com">hello@menlohacks.com</a></p>
+                    <p>Email us at <a href="mailto:hello@menlohacks.com">hello@menlohacks.com</a>.</p>
                 </div>
 
             </div>
         </div>
-
+        
+        <div id="schedule-link" class="nav-marker"></div>
         <div id="schedule" class="container-fluid">
             <h2 class="section-heading">Schedule</h2>
             <div class="col-wrapper">
