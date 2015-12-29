@@ -51,7 +51,7 @@
 footer
 {
     background-color : #1abc9c;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 li
@@ -71,45 +71,85 @@ li
 html,
 body {
     height: 100%;
-
 }
 .content-main {
     height: 100%;
     background-color: #34495e;
 }
 
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    .logo-header {
+        max-height: 25%;
+    }
+    .large-button {
+        margin-bottom: 10px;
+            font-size: 1.2em;
+        padding: 0.2em;
+    }
+    .intro-text {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .intro-text p {
+        line-height: 0.7;
+        font-size: 1.2em;
+    }
+
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait), only screen and (min-width: 768px) {
+    .logo-header {
+        width: 50%;
+        max-width: 300px;   
+    }
+    .large-button {
+        margin-bottom: 30px;
+        font-size: 1.5em;
+        padding: 0.3em;
+    }
+    .intro-text {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .intro-text p {
+        line-height: 1;
+        font-size: 1.5em;
+    }
+
+}
+
 .logo-header {
-    height:45%;
-    max-height: 200px;
-    min-height: 100px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+    margin-top 25px;
 }
 
 /* background crazyness */
 .main-background {
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('https://c2.staticflickr.com/6/5657/21910039498_907e679b57_h.jpg');
     background-size: cover;
-    height: calc(100% - 7em);
     width:100%;
 }
 
 @media screen and (min-width: 768px) {
     .main-background {
-        height: calc(100%-7em);
+        height: calc(100% - 7em);
+        margin-top: 0;
     }
     .col-wrapper {
         width: 80%;
     }
     .large-button {
         width: 25%;
-            min-width: 125px;
-    max-width: 150px;
+        min-width: 125px;
+        max-width: 150px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .main-background {
-        height: 100%;
+        height: calc(100% - 50px);
+        margin-top: 50px;
     }
     .col-wrapper {
         width: 90%;
@@ -127,7 +167,7 @@ body {
 .center-container {
     position : absolute;
     width : 100%;
-    height: 100%;
+    /*    height: 100%;*/
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
@@ -142,30 +182,25 @@ body {
 }
 
 .top-center-box {
-    height : 50%;
     width : 99%;
+    margin-top: auto;
+    margin-bottom: auto;
     display: inline-block;
-    vertical-align: middle;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
 }
 
 
 .intro-text p {
-    line-height: 1;
-    font-size: 1.5em;
     font-family: av-regular;
-}
-
-.intro-text {
-    margin: 25px;
 }
 
 .large-button {
-    font-size: 1.5em;
     font-family: av-regular;
     margin-right: 25px;
     margin-left: 25px;
-    margin-bottom: 15px;
-    padding: 0.3em;
     color:white;
     vertical-align: middle;
 }
@@ -218,6 +253,7 @@ body {
 
 .breadcrumbs {
     font-size: 1em;
+    width: 100%;
 }
 
 .breadcrumbs-center {
@@ -250,7 +286,6 @@ body {
     position: fixed;
     top: 0;
     z-index: 10000;
-    border-radius: 0 0 0.5em 0.5em;
 }
 
 #about {
@@ -324,7 +359,6 @@ p {
     margin-right: auto;
     margin-left: auto;
     overflow: auto;
-/*    width: 80%;*/
     max-width: 800px;
 }
 
@@ -350,7 +384,6 @@ p {
     width: 90px;
 }
 
-
 #schedule h4 {
     font-family: av-demibold;
     font-size: 1.55em;
@@ -358,6 +391,10 @@ p {
     text-align: center;
 }
 
+.schedule-note {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
 .auto-width {
     width: auto;
 }
