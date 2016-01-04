@@ -83,7 +83,7 @@ body {
     }
     .large-button {
         margin-bottom: 10px;
-            font-size: 1.2em;
+        font-size: 1.2em;
         padding: 0.2em;
     }
     .intro-text {
@@ -278,10 +278,14 @@ body {
     border-bottom-color: #47adaa; }
 .breadcrumbs #faq-crumb.active, .breadcrumbs #faq-crumb:hover {
     border-bottom-color: #fdcb5e; }
-.breadcrumbs #schedule-crumb.active, .breadcrumbs #schedule-crumb:hover {
-    border-bottom-color: #202f57; }
 .breadcrumbs #beginner-crumb.active, .breadcrumbs #beginner-crumb:hover {
-    border-bottom-color: #3c9cdc; }
+    border-bottom-color: #3c9cdc;
+}
+.breadcrumbs #schedule-crumb.active, .breadcrumbs #schedule-crumb:hover {
+    border-bottom-color: #8e44ad; 
+}
+.breadcrumbs #partner-crumb.active, .breadcrumbs #partner-crumb:hover {
+    border-bottom-color: #202f57;}
 
 .nav-wrapper.stick {
     position: fixed;
@@ -335,10 +339,6 @@ p {
     color: #3498db;
 }
 
-#schedule {
-    padding-bottom: 50px;
-}
-
 
 @media screen and (min-width: 340px) {
     .schedule-item p {
@@ -365,7 +365,7 @@ p {
 }
 
 #beginner p {
-text-align: left;
+    text-align: left;
 }
 
 #beginner {
@@ -413,8 +413,9 @@ text-align: left;
 
 #schedule {
     background-color: #2980b9;
-      background-image: url("../img/gym-blur.jpg");
+    background-image: url("../img/gym-blur.jpg");
     background-size: cover;
+    padding-bottom: 50px;
 }
 
 #schedule h4 {
@@ -432,6 +433,35 @@ text-align: left;
     width: auto;
 }
 
+#partners {
+    background-color: white;
+    padding-bottom: 18px;
+}
+
+#partners p {
+    color: #4a4a4a;
+}
+
+#partners h2 {
+    color: #4a4a4a;
+}
+
+#partners a {
+    text-decoration:none;
+}
+
+#partners img {
+    height: 10em;
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+    vertical-align: middle;
+}
+
+.img-wrapper {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: inline-block;
+}
 
 .faq-item a {
     color: white;
