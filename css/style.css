@@ -51,7 +51,6 @@
 footer
 {
     background-color : #1abc9c;
-    margin-top: 35px;
 }
 
 li
@@ -281,6 +280,8 @@ body {
     border-bottom-color: #fdcb5e; }
 .breadcrumbs #schedule-crumb.active, .breadcrumbs #schedule-crumb:hover {
     border-bottom-color: #202f57; }
+.breadcrumbs #beginner-crumb.active, .breadcrumbs #beginner-crumb:hover {
+    border-bottom-color: #3c9cdc; }
 
 .nav-wrapper.stick {
     position: fixed;
@@ -335,7 +336,7 @@ p {
 }
 
 #schedule {
-    margin-bottom: 25px;
+    padding-bottom: 50px;
 }
 
 
@@ -353,6 +354,32 @@ p {
 .schedule-item {
     text-align: left;
     margin-top: 0.5em;
+}
+
+#beginner .intro {
+    font-family: av-regular-italic;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#beginner p {
+text-align: left;
+}
+
+#beginner {
+    margin-bottom: 50px;
+}
+
+#beginner h3 {
+    font-family: av-demibold;
+    font-size: 1.7em;
+    margin-bottom: 0.8em;
+}
+
+#beginner b {
+    font-family: av-demibold;
 }
 
 .col-wrapper {
@@ -382,6 +409,12 @@ p {
 .time {
     color: #FEA620;
     width: 90px;
+}
+
+#schedule {
+    background-color: #2980b9;
+      background-image: url("../img/gym-blur.jpg");
+    background-size: cover;
 }
 
 #schedule h4 {
