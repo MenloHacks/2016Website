@@ -284,8 +284,13 @@ body {
 .breadcrumbs #schedule-crumb.active, .breadcrumbs #schedule-crumb:hover {
     border-bottom-color: #8e44ad; 
 }
+
+.breadcrumbs #sponsor-crumb.active, .breadcrumbs #sponsor-crumb:hover {
+    border-bottom-color:#1abc9c;}
+
 .breadcrumbs #partner-crumb.active, .breadcrumbs #partner-crumb:hover {
     border-bottom-color: #202f57;}
+
 
 .nav-wrapper.stick {
     position: fixed;
@@ -435,7 +440,6 @@ p {
 
 #partners {
     background-color: white;
-    padding-bottom: 18px;
 }
 
 #partners p {
@@ -450,16 +454,54 @@ p {
     text-decoration:none;
 }
 
+#sponsors a {
+    text-decoration: none;
+}
+
+#sponsors h2 {
+    color: #4a4a4a;
+}
+
+#sponsors {
+    background-color: white;
+    padding-bottom: 18px;
+}
+
 #partners img {
-    height: 10em;
+    max-height: 8em;
     margin-left: 3.5em;
     margin-right: 3.5em;
     vertical-align: middle;
+    margin-bottom: 3.5em;
+    max-width: 20em;
+}
+
+.partners-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+
+.bronze-sponsor {
+    max-height: 8em;
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+    vertical-align: middle;
+    margin-bottom: 2em;
+    max-width: 20em;
+}
+
+.silver-sponsor {
+    max-height: 12em;
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+    vertical-align: middle;
+    margin-bottom: 2em;
+    max-width: 25em;
 }
 
 .img-wrapper {
     padding-top: 2em;
-    padding-bottom: 2em;
     display: inline-block;
 }
 
