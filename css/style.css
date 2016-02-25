@@ -284,12 +284,12 @@ body {
 .breadcrumbs #schedule-crumb.active, .breadcrumbs #schedule-crumb:hover {
     border-bottom-color: #8e44ad; 
 }
+.breadcrumbs #judges-crumb.active, .breadcrumbs #judges-crumb:hover {
+    border-bottom-color: #C8F7C5;
+}
 
 .breadcrumbs #sponsor-crumb.active, .breadcrumbs #sponsor-crumb:hover {
     border-bottom-color:#1abc9c;}
-
-.breadcrumbs #partner-crumb.active, .breadcrumbs #partner-crumb:hover {
-    border-bottom-color: #202f57;}
 
 
 .nav-wrapper.stick {
