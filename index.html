@@ -52,20 +52,20 @@
         <script src="https://maps.googleapis.com/maps/api/js">
         </script>
 
-<!--
-        <script>
-            function initialize() {
-                var mapCanvas = document.getElementById('map');
-                var mapOptions = {
-                    center: new google.maps.LatLng(37.453263, -122.191283),
-                    zoom: 16,
-                    scrollwheel: false,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                }
-                var map = new google.maps.Map(mapCanvas, mapOptions);
-            }
-            google.maps.event.addDomListener(window, 'load', initialize);
-        </script>
+        <!--
+<script>
+function initialize() {
+var mapCanvas = document.getElementById('map');
+var mapOptions = {
+center: new google.maps.LatLng(37.453263, -122.191283),
+zoom: 16,
+scrollwheel: false,
+mapTypeId: google.maps.MapTypeId.ROADMAP
+}
+var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 -->
 
 
@@ -90,6 +90,7 @@
                         <li><a href="#faq-link">FAQ</a></li>
                         <li><a href="#beginner-link">First Time Hackers</a></li>
                         <li><a href="#schedule-link">Schedule</a></li>
+                        <li><a href="#judges-link">Judges</a></li>
                         <li><a href="#sponsor-link">Sponsors</a></li>
                         <li><a href="#partner-link">Partners</a></li>
 
@@ -98,7 +99,7 @@
             </div>
         </nav>
         <!--        <div class="front-page">-->
-        
+
         <a id="mlh-trust-badge" style="position:absolute;right:50px;max-width:100px;width:10%;min-width: 60px;display:block;" href="https://mlh.io/seasons/s2016/events?utm_source=s2016&utm_medium=TrustBadge&utm_campaign=s2016" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/s2016.png" alt="MLH Official - Spring 2016" style="width:100%;" ></a>
         <div id = "home" class="main-background">
 
@@ -179,7 +180,7 @@
                 </div>
                 <div class="faq-item">
                     <h3>When do applications close?</h3>
-                    <p>February 29th.</p>
+                    <p>March 7th.</p>
                 </div>
                 <div class="faq-item">
                     <h3>When will application decisions be released?</h3>
@@ -291,83 +292,109 @@
             </div>
             <h4 class="schedule-note">More details coming soon</h4>
         </div>
-<!--        Partners-->
-        
-        
-        <div id="sponsor-link" class="nav-marker"></div>
-        <div id="sponsors" class="container-fluid">
-        <h2 class="section-heading">Sponsors</h2>
-            <div class="img-wrapper">
-            <a href="http://palantir.com">
-            <img class="silver-sponsor" src="img/palantir.png">    
-            </a>
-            </div>
-            <br/>
-            <div class="img-wrapper">
-            <a href="http://entefy.com">
-            <img class="bronze-sponsor" src="img/entefyLogo.jpg">
-            </a>
-            <a href="http://nc.me">
-            <img class="bronze-sponsor" src="img/namecheap.png">
-            </a>
-            </div>
-            <br/>
-            <div class="img-wrapper">
-            <a href="http://www.launchsummer.org/">
-            <img class="bronze-sponsor" src="img/launch.jpg">
-            </a>
-            <a href="https://www.doughbies.com/">
-            <img class="bronze-sponsor" src="img/doughbies.png">
-            </div>
-            </a>
+
+        <div id="judges-link" class="nav-marker"></div>
+        <div id="judges" class="container-fluid">
+            <h2 class="section-heading">Judges</h2>
+            <div class="judge-wrapper">
+                <div class="judge-div">
+                    <img class="judge-image" src="img/susan-wojcicki.jpg">
+                    <p>Susan Wojcicki <br>CEO, YouTube</p>
+                </div>
+                <div class="judge-div">
+                    <img class="judge-image" src="img/brienne-small.jpg">
+                    <p>Brienne Ghafourifar <br>Co-Founder, Entefy</p>
+                </div>
+                <div class="judge-div">
+                    <img class="judge-image" src="img/default-avatar.png">
+                    <p>TBA</p>
+                </div>
+                <div class="judge-div">
+                    <img class="judge-image" src="img/default-avatar.png">
+                    <p>TBA</p>
+                </div>
+                <div class="judge-div">
+                    <img class="judge-image" src="img/default-avatar.png">
+                    <p>TBA</p>
+                </div>
             </div>
         </div>
-        
-        <div id="partner-link" class="nav-marker"></div>
-        <div id="partners" class="container-fluid">
+
+
+        <div id="sponsor-link" class="nav-marker"></div>
+        <div id="sponsors" class="container-fluid">
+            <h2 class="section-heading">Sponsors</h2>
+            <div class="img-wrapper">
+                <a href="http://palantir.com">
+                    <img class="silver-sponsor" src="img/palantir.png">    
+                </a>
+            </div>
+            <br/>
+            <div class="img-wrapper">
+                <a href="http://entefy.com">
+                    <img class="bronze-sponsor" src="img/entefyLogo.jpg">
+                </a>
+                <a href="http://nc.me">
+                    <img class="bronze-sponsor" src="img/namecheap.png">
+                </a>
+            </div>
+            <br/>
+            <div class="img-wrapper">
+                <a href="http://www.launchsummer.org/">
+                    <img class="bronze-sponsor" src="img/launch.jpg">
+                </a>
+                <a href="https://www.doughbies.com/">
+                    <img class="bronze-sponsor" src="img/doughbies.png">
+                    </div>
+                </a>
+        </div>
+        </div>
+
+    <div id="partner-link" class="nav-marker"></div>
+    <div id="partners" class="container-fluid">
         <div class="partners-wrapper">
             <h2 class="section-heading">Partners</h2>
             <div class="img-wrapper">
-            <a href="http://mlh.io">
-            <img src="img/mlh-logo.png">   
-            </a>
-            <a href="http://hacker.fund">
-            <img src="img/hackerfund.png">    
-            </a>
-            <a href="http://menloschool.org">
-            <img src="img/menlo-seal.jpg">
-            </a>
-            <a href="https://www.menloschool.org/experience/m-best.php">
-            <img src="img/m-best_logo.png">
-            </a>
+                <a href="http://mlh.io">
+                    <img src="img/mlh-logo.png">   
+                </a>
+                <a href="http://hacker.fund">
+                    <img src="img/hackerfund.png">    
+                </a>
+                <a href="http://menloschool.org">
+                    <img src="img/menlo-seal.jpg">
+                </a>
+                <a href="https://www.menloschool.org/experience/m-best.php">
+                    <img src="img/m-best_logo.png">
+                </a>
             </div>
         </div>
-        </div>
-        
+    </div>
 
 
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <br/>
-                        <ul class="list-unstyled list-inline footer-links">
-                            <li><a href="#home"><span class = "footer-link">Home</span></a></li>
-                            <li class="footer-menu-divider">&sdot;</li>
-                            <li><a href="http://facebook.com/menlohacks"><span class = "footer-link">Facebook</span></a></li>
-                            <li class="footer-menu-divider">&sdot;</li>
-                            <li><a href="http://twitter.com/menlohacks"><span class = "footer-link">Twitter</span></a></li>
-                            <li class="footer-menu-divider">&sdot;</li>
-                            <li><a href="mailto:hello@menlohacks.com"><span class = "footer-link">Contact Us</span></a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-note">
-                        <p>&copy; 2016 MenloHacks, Inc.</p>
-                    </div>
 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <br/>
+                    <ul class="list-unstyled list-inline footer-links">
+                        <li><a href="#home"><span class = "footer-link">Home</span></a></li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="http://facebook.com/menlohacks"><span class = "footer-link">Facebook</span></a></li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="http://twitter.com/menlohacks"><span class = "footer-link">Twitter</span></a></li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="mailto:hello@menlohacks.com"><span class = "footer-link">Contact Us</span></a></li>
+                    </ul>
                 </div>
+                <div class="footer-note">
+                    <p>&copy; 2016 MenloHacks, Inc.</p>
+                </div>
+
             </div>
-        </footer>
+        </div>
+    </footer>
 
 
 
